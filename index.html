@@ -13,14 +13,26 @@
   <style type="text/css">
   	.custom-card{
       width: 125px;
-      height: 100px;
-      padding: 4px 3px;
+      height: 80px;
+      padding: 0px 3px;
       text-align: center;
       border-radius: 0px; 
       background: #d4dee6;
       border: 1px solid #068efa;
       font-weight: bold;
       box-shadow: 0px 0px 8px 0 rgba(0, 32, 96, 0.62), 0px 3px 20px 0 rgba(0, 0, 0, 0.66);
+      /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  	}
+  	.custom-card2{
+      width: 125px;
+      height: 80px;
+      padding: 0px 3px;
+      text-align: center;
+      border-radius: 0px; 
+      background: #4393d3;
+      border: 1px solid #068efa;
+      font-weight: bold;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   	}
   	.green{
   		background: #3cbd3c;
@@ -33,6 +45,23 @@
   	.yellow{
   		background: #ffcd36;
   		color: white;
+  	}
+  	.myborder{
+        border:1px solid #068efa;
+  	}
+  	.month-table td, .month-table th {
+	    padding: 2px;
+	    vertical-align: middle;
+	    border-top: 1px solid #dee2e6;
+	    text-align: center;
+	}
+	.liggreen{
+  		background: #c6f7ce;
+  		color: black;
+  	}
+  	.ligorange{
+  		background: #ff9a0552;
+  		color: black;
   	}
   </style>
 </head>
@@ -56,17 +85,98 @@
       	  	<img src="assets/images/logo2.png" style="height: 62px;width: auto">
       	  </div>
       	</div>
-      	<div class="mx-auto" style="overflow-x: auto">
-      	<div class="row my-3 mx-0">
-      		<span class="card custom-card mx-1 my-2">Receipt Completed <h4>98.5%</h4></span>
-      		<span class="card custom-card mx-1 my-2">Shipments Pending <h4>98.5%</h4></span>
-      		<span class="card custom-card mx-1 my-2">Receiving In-Progress <h4>98.5%</h4></span>
-      		<span class="card custom-card mx-1 my-2">Pending for QC <h4>98.5%</h4></span>
-      		<span class="card custom-card mx-1 my-2">Ready for Putaway <h4>98.5%</h4></span>
-      		<span class="card custom-card mx-1 my-2">Shipments On-Hold <h4>98.5%</h4></span>
-      		<span class="card custom-card green mx-1 my-2">Within 48Hrs <h4>98.5%</h4></span>
-      		<span class="card custom-card yellow mx-1 my-2">48 - 96 Hours <h4>98.5%</h4></span>
-      		<span class="card custom-card red mx-1 my-2">Exceeding 96Hrs <h4>98.5%</h4></span>
+      	<div class="" style="overflow-x: auto">
+      	<div class="row justify-content-center myborder mt-2 mb-1 py-2 mx-0">
+      		<span class="card custom-card mx-1 my-1">Receipt Completed <h4>98.5%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Shipments Pending <h4>98.5%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Receiving In-Progress <h4>98.5%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Pending <br>for QC <h4>98.5%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Ready for Putaway <h4>98.5%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Shipments On-Hold <h4>98.5%</h4></span>
+      		<span class="card custom-card green mx-1 my-1">Within <br>48Hrs <h4>98.5%</h4></span>
+      		<span class="card custom-card yellow mx-1 my-1">48 - 96 <br>Hours <h4>98.5%</h4></span>
+      		<span class="card custom-card red mx-1 my-1">Exceeding <br>96Hrs <h4>98.5%</h4></span>
+      	</div>
+      	<div class="row justify-content-center myborder my-1 py-2 mx-0">
+      		<span class="card custom-card2 mx-1 my-1">Avg Dock to Stock Time <h4>24Hrs</h4></span>
+      		<span class="card custom-card2 mx-1 my-1">Avg QC Time<h4>24Hrs</h4></span>
+      		<span class="card custom-card2 mx-1 my-1">Avg Putaway Time <h4>24Hrs</h4></span>
+      	</div>
+      	<div class="row justify-content-center myborder my-1 py-2 mx-0">
+      		<h5 class="text-center"><b>Operational Statistics-NUPCO</b></h5>
+      		<div class="row justify-content-center mx-0">
+      		<span class="card custom-card liggreen mx-1 my-1">Shipments Received <h4>34</h4></span>
+      		<span class="card custom-card liggreen mx-1 my-1">Receipt Completed<h4>34</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Shipments Pending <h4>34</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Receiving In-Progress <h4>34</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Ready for Putaway <h4>34</h4></span>
+      		<span class="card custom-card mx-1 my-1">Received Today <h4>34</h4></span>
+      		<span class="card custom-card green mx-1 my-1">Within <br>48Hrs <h4>34</h4></span>
+      		<span class="card custom-card yellow mx-1 my-1">48 - 96 <br>Hours <h4>34</h4></span>
+      		<span class="card custom-card red mx-1 my-1">Exceeding <br>96Hrs <h4>34</h4></span>
+      		<span class="card custom-card liggreen mx-1 my-1">Total Pallets Received <h4>34</h4></span>
+      		<span class="card custom-card liggreen mx-1 my-1">Total Pallets Completed <h4>34</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Total Pallets Pending<h4>34</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Pending <br>for QC <h4>34</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">On-Hold Shipments <h4>34</h4></span>
+      		<span class="card custom-card mx-1 my-1">Putaway Today <h4>34</h4></span>
+      	</div>
+      	</div>
+      	<div class="row justify-content-center myborder my-1 py-2 mx-0">
+      		<div class="col-lg-12">
+      			<h5 class="text-center"><b>Monthly Data</b></h5>
+      		<table class="table table-bordered month-table">
+			    <thead>
+			      <tr>
+			        <th></th>
+			        <th>JAN</th>
+			        <th>FEB</th>
+			        <th>MAR</th>
+			        <th>APR</th>
+			        <th>MAY</th>
+			        <th>JUN</th>
+			        <th>JUL</th>
+			        <th>AUG</th>
+			        <th>SEP</th>
+			        <th>OCT</th>
+			        <th>NOV</th>
+			        <th>DEC</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			      	<td>Shipments Received</td>
+			      	<td>2</td>
+			      	<td>3</td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      </tr>
+			      <tr>
+			      	<td>Shipments Arrived</td>
+			      	<td>2</td>
+			      	<td>3</td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      	<td></td>
+			      </tr>
+			    </tbody>
+			</table>
+      	</div>
       	</div>
       	</div>
       </div>
