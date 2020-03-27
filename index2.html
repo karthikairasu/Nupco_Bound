@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nupco</title>
+  <meta name="theme-color" content="#0B5E97">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <link rel="icon" type="image/png" href="assets/images/logo2.png" sizes="194x194">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Play|Titillium+Web|Changa|Baloo+Da+2|Lobster|Ubuntu&display=swap" rel= "stylesheet">
+  <link rel="manifest" href="assets/lib/manifest.json">
+  <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
+  <script src="assets/lib/db.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <style type="text/css">
+    body{
+      	font-family: 'Baloo Da 2', cursive;
+      	}
+  	.custom-card{
+      width: 125px;
+      height: 80px;
+      padding: 0px 3px;
+      text-align: center;
+      border-radius: 0px; 
+      background: #d4dee6;
+      border: 1px solid #068efa;
+      font-weight: bold;
+      box-shadow: 0px 0px 8px 0 rgba(0, 32, 96, 0.62), 0px 3px 20px 0 rgba(0, 0, 0, 0.66);
+      /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  	}
+  	.custom-card2{
+      width: 125px;
+      height: 80px;
+      padding: 0px 3px;
+      text-align: center;
+      border-radius: 0px; 
+      background: #4393d3;
+      border: 1px solid #068efa;
+      font-weight: bold;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	}
+  	.green{
+  		background: #3cbd3c;
+  		color: white;
+  	}
+    .red{
+  		background: red;
+  		color: white;
+  	}
+  	.yellow{
+  		background: #ffcd36;
+  		color: white;
+  	}
+  	.myborder{
+        border:1px solid #068efa;
+  	}
+  	.month-table td, .month-table th {
+	    padding: 2px;
+	    vertical-align: middle;
+	    border-top: 1px solid #dee2e6;
+	    text-align: center;
+	}
+	.liggreen{
+  		background: #c6f7ce;
+  		color: black;
+  	}
+  	.ligorange{
+  		background: #ff9a0552;
+  		color: black;
+  	}
+  </style>
+</head>
+<body class="bg-dark">
+
+<div class="container-fluid mt-1">
+   <div class="row mx-0">
+      <div class="col-lg-12 card" style="height: 99vh;border-right: 4px solid #b0292e;border-left: 4px solid #eb7b33;">
+      	<div class="row">
+      	  <div class="col-lg-3 text-center">
+      	  	<img src="assets/images/agility.png" style="height: 70px;width: auto">
+      	  </div>
+      	  <div class="col-lg-6">
+      	  	<h3 class="text-center my-3"><b><a href="index.html">OUTBOUND</a>-NUPCO RIYADH</b></h3>
+      	  	<div class="text-center">
+      	  		<label class="bg-light p-1 border"><b>Date</b></label><b>
+      	  		<label class="bg-warning p-1 border" id="time">25/03/2020</label></b>
+      	  	</div>
+      	  </div>
+      	  <div class="col-lg-3 text-center">
+      	  	<img src="assets/images/logo2.png" style="height: 62px;width: auto">
+      	  </div>
+      	</div>
+      	<div class="" style="overflow-x: auto">
+      	<div class="row justify-content-center myborder mt-2 mb-1 py-2 mx-0">
+      		<span class="card custom-card mx-1 my-1">Total Orders Delivered <br><h4 id="in1">0%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Pending <br>Orders<br><h4 id="in2">0%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Picking In-Progress <br><h4 id="in3">0%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Ready <br>for QC <br><h4 id="in4">0%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Ready for Delivery <br><h4 id="in5">0%</h4></span>
+      		<span class="card custom-card mx-1 my-1">Order<br> On-Hold <br><h4 id="in6">0%</h4></span>
+      		<span class="card custom-card mx-1 my-1"> <br> <br><h4 id=""></h4></span>
+      		<span class="card custom-card mx-1 my-1"> <br><br><h4 id=""></h4></span>
+      		<span class="card custom-card mx-1 my-1"> <br><br><h4 id=""></h4></span>
+      	</div>
+      	<div class="row justify-content-center myborder my-1 py-2 mx-0">
+      		<span class="card custom-card2 mx-1 my-1">Avg Picking <br> Time <br><h4>24Hrs</h4></span>
+      		<span class="card custom-card2 mx-1 my-1">Avg QC<br> Time<h4>24Hrs<br></h4></span>
+      		<span class="card custom-card2 mx-1 my-1">Avg Delivery Time <br><h4>24Hrs</h4></span>
+      	</div>
+      	<div class="myborder">
+      	<div class="row justify-content-center my-1 py-1 mx-0">
+      		<div class="col-lg-12"><h5 class="text-center"><b>Operational Statistics-NUPCO</b><br></h5></div>
+      		<span class="card custom-card liggreen mx-1 my-1">Total Orders Received<br><h4 id="in10">0</h4></span>
+      		<span class="card custom-card liggreen mx-1 my-1">Total Orders Delivered<br><h4 id="in11">0</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Total Orders Pending <br><h4 id="in12">0</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Picking In-Progress<br><h4 id="in13">0</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Ready for Delivery<br> <h4 id="in14">0</h4></span>
+      		<span class="card custom-card mx-1 my-1">Received <br>Today <br><h4 id="in15">0</h4></span>
+      		<span class="card custom-card mx-1 my-1"><br><br><h4 id=""></h4></span>
+      		<span class="card custom-card mx-1 my-1"><br><br><h4 id=""></h4></span>
+      		<span class="card custom-card mx-1 my-1"><br><br><h4 id=""></h4></span>
+      	</div>
+      	<div class="row justify-content-center mx-0">
+      		<span class="card custom-card liggreen mx-1 my-1 invisible"> <br><h4 id=""></h4></span>
+      		<span class="card custom-card liggreen mx-1 my-1 invisible"> <br><h4 id=""></h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1 invisible"><br><h4 id=""></h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">Ready <br>for QC <br><h4 id="in22">0</h4></span>
+      		<span class="card custom-card ligorange mx-1 my-1">On-Hold<br> Orders <br><h4 id="in23">0</h4></span>
+      		<span class="card custom-card mx-1 my-1">Dispatched<br> Today <br><h4 id="in24">0</h4></span>
+      		<span class="card custom-card invisible mx-1 my-1"></span>
+      		<span class="card custom-card invisible mx-1 my-1"></span>
+      		<span class="card custom-card invisible mx-1 my-1"></span>
+      	</div>
+      	</div>
+      	<div class="row justify-content-center myborder my-1 py-2 mx-0">
+      		<div class="col-lg-12">
+      			<h5 class="text-center"><b>Monthly Data</b></h5>
+      			
+      		<table class="table table-bordered month-table">
+			    <thead>
+			      <tr>
+			        <th></th>
+			        <th>JAN</th>
+			        <th>FEB</th>
+			        <th>MAR</th>
+			        <th>APR</th>
+			        <th>MAY</th>
+			        <th>JUN</th>
+			        <th>JUL</th>
+			        <th>AUG</th>
+			        <th>SEP</th>
+			        <th>OCT</th>
+			        <th>NOV</th>
+			        <th>DEC</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			      	<td>Shipments Received</td>
+			      	<td id="in25"></td>
+			      	<td id="in26"></td>
+			      	<td id="in27"></td>
+			      	<td id="in28"></td>
+			      	<td id="in29"></td>
+			      	<td id="in30"></td>
+			      	<td id="in31"></td>
+			      	<td id="in32"></td>
+			      	<td id="in33"></td>
+			      	<td id="in34"></td>
+			      	<td id="in35"></td>
+			      	<td id="in36"></td>
+			      </tr>
+			      <tr>
+			      	<td>Shipments Arrived</td>
+			      	<td id="in37"></td>
+			      	<td id="in38"></td>
+			      	<td id="in39"></td>
+			      	<td id="in40"></td>
+			      	<td id="in41"></td>
+			      	<td id="in42"></td>
+			      	<td id="in43"></td>
+			      	<td id="in44"></td>
+			      	<td id="in45"></td>
+			      	<td id="in46"></td>
+			      	<td id="in47"></td>
+			      	<td id="in48"></td>
+			      </tr>
+			    </tbody>
+			</table>
+			<!--<div class="row justify-content-center  my-1 py-2 mx-0" id="chart_div" style="width: 100%; height: 135px;"></div>-->
+      	</div>
+      	</div>
+      	</div>
+      </div>
+   </div>
+</div>
+  
+<!-- script files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+            (function () {
+                function checkTime(i) {
+                    return (i < 10) ? "0" + i : i;
+                }
+
+                function startTime() {
+                    var today = new Date().toLocaleString("en-SA", {timeZone: "Asia/Riyadh"});
+                        today = new Date(today);
+                        dd = checkTime(today.getDate()),
+                        mm = checkTime(today.getMonth()+1),
+                        yy = checkTime(today.getFullYear()),
+                        h = checkTime(today.getHours()),
+                        m = checkTime(today.getMinutes()),
+                        s = checkTime(today.getSeconds());
+                        dt =dd + "/" + mm + "/" + yy + " "+ h + ":" + m + ":" + s;
+                    document.getElementById('time').innerHTML =dt;
+                    t = setTimeout(function () {
+                        startTime()
+                    }, 500);
+                }
+                startTime();
+            })();
+        </script>
+  <script>
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawTopX);
+
+function drawTopX() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Monthly Data');
+      data.addColumn('number', 'Shipments Received');
+      data.addColumn('number', 'Shipments Arrived');
+
+      data.addRows([
+        [{v: [1, 0, 0], f: 'JAN'}, 1, 1],
+        [{v: [2, 0, 0], f: 'FEB'}, 2, 2],
+        [{v: [3, 0, 0], f:'MAR'}, 3, 3],
+        [{v: [4, 0, 0], f: 'APR'}, 4, 4],
+        [{v: [5, 0, 0], f: 'MAY'}, 5, 5],
+        [{v: [6, 0, 0], f: 'JUN'}, 6, 6],
+        [{v: [7, 0, 0], f: 'JUL'}, 7, 7],
+        [{v: [8, 0, 0], f: 'AUG'}, 8, 8],
+        [{v: [9, 0, 0], f: 'SEP'}, 9, 9],
+        [{v: [10, 0, 0], f: 'OCT'}, 10, 10],
+        [{v: [11, 0, 0], f: 'NOV'}, 11, 11],
+        [{v: [12, 0, 0], f: 'DEC'}, 12, 12],
+      ]);
+      var options = {
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
+      materialChart.draw(data, options);
+    }
+  </script>
+  
+  <script>
+    $(document).ready(function() {
+    var ids='1';
+    jQuery.ajax({
+      type: "GET",
+      url: 'get.php?id='+ids,
+      success: function (data) {
+        var obj = $.parseJSON(data);
+        $.each(obj, function() {
+            in1 = this['2']+"%";
+            in2 = this['3']+"%";
+            in3 = this['4']+"%";
+            in4 = this['5']+"%";
+            in5 = this['6']+"%";
+            in6 = this['7']+"%";
+            in7 = this['8']+"%";
+            in8 = this['9']+"%";
+            in9 = this['10']+"%";
+            in10 = this['11'];
+            in11 = this['12'];
+            in12 = this['13'];
+            in13 = this['14'];
+            in14 = this['15'];
+            in15 = this['16'];
+            in16 = this['17'];
+            in17 = this['18'];
+            in18 = this['19'];
+            in19 = this['20'];
+            in20 = this['21'];
+            in21 = this['22'];
+            in22 = this['23'];
+            in23 = this['24'];
+            in24 = this['25'];
+            inm1 = this['26'];
+            inm2 = this['27'];
+            inm3 = this['28'];
+            inm4 = this['29'];
+            inm5 = this['30'];
+            inm6 = this['31'];
+            inm7 = this['32'];
+            inm8 = this['33'];
+            inm9 = this['34'];
+            inm10 = this['35'];
+            inm11 = this['36'];
+            inm12 = this['37'];
+            ina1 = this['38'];
+            ina2 = this['39'];
+            ina3 = this['40'];
+            ina4 = this['41'];
+            ina5 = this['42'];
+            ina6 = this['43'];
+            ina7 = this['44'];
+            ina8 = this['45'];
+            ina9 = this['46'];
+            ina10 = this['47'];
+            ina11 = this['48'];
+            ina12 = this['49'];
+    });
+    $('#in1').html(in1);
+    $('#in2').html(in2);
+    $('#in3').html(in3);
+    $('#in4').html(in4);
+    $('#in5').html(in5);
+    $('#in6').html(in6);
+    $('#in7').html(in7);
+    $('#in8').html(in8);
+    $('#in9').html(in9);
+    $('#in10').html(in10);
+    $('#in11').html(in11);
+    $('#in12').html(in12);
+    $('#in13').html(in13);
+    $('#in14').html(in14);
+    $('#in15').html(in15);
+    $('#in16').html(in16);
+    $('#in17').html(in17);
+    $('#in18').html(in18);
+    $('#in19').html(in19);
+    $('#in20').html(in20);
+    $('#in21').html(in21);
+    $('#in22').html(in22);
+    $('#in23').html(in23);
+    $('#in24').html(in24);
+    $('#in25').html(inm1);
+    $('#in26').html(inm2);
+    $('#in27').html(inm3);
+    $('#in28').html(inm4);
+    $('#in29').html(inm5);
+    $('#in30').html(inm6);
+    $('#in31').html(inm7);
+    $('#in32').html(inm8);
+    $('#in33').html(inm9);
+    $('#in34').html(inm10);
+    $('#in35').html(inm11);
+    $('#in36').html(inm12);
+    $('#in37').html(ina1);
+    $('#in38').html(ina2);
+    $('#in39').html(ina3);
+    $('#in40').html(ina4);
+    $('#in41').html(ina5);
+    $('#in42').html(ina6);
+    $('#in43').html(ina7);
+    $('#in44').html(ina8);
+    $('#in45').html(ina9);
+    $('#in46').html(ina10);
+    $('#in47').html(ina11);
+    $('#in48').html(ina12);
+    },});});
+  </script>
+    
+</body>
+</html>
