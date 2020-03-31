@@ -14,13 +14,13 @@
   	body{
   		font-family: 'Baloo Da 2', cursive;
   	}
-    .emer-table th, .emer-table td {
+    .emer-table thead th, .emer-table tbody td {
       vertical-align: middle;
       border: 2px solid #cbd1d6;
       text-align: left;
       padding: 3px 4px;
     }
-  	.emer-table th{
+  	.emer-table thead th{
       text-align: center;
     }
     .emer-table td:nth-last-child(1){
@@ -112,6 +112,18 @@
      .main{
        font-size: 13px!important;
      }
+    }
+    .emer-table thead tr:nth-child(1) th{
+       position: sticky;
+       top:0px;
+       z-index: 999;
+       outline: 2px solid #cbd1d6;
+    }
+    .emer-table thead tr:nth-child(2) th{
+       position: sticky;
+       top:32px;
+       z-index: 999;
+       outline: 2px solid #cbd1d6;
     }
   </style>
 </head>
