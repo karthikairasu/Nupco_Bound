@@ -27,7 +27,6 @@
       text-align: center;
     }
     /*========checkbox button deck==========*/
-    *{font-family: 'Roboto', sans-serif;}
 
     @keyframes click-wave {
       0% {
@@ -119,12 +118,20 @@
        top:0px;
        z-index: 999;
        outline: 2px solid #cbd1d6;
+       background: #002060;
+       color: white;
     }
     .emer-table thead tr:nth-child(2) th{
        position: sticky;
        top:32px;
        z-index: 999;
        outline: 2px solid #cbd1d6;
+       background: #002060;
+       color: white;
+    }
+    .table-orange{
+      background:#e48739;
+      color:white;
     }
   </style>
 </head>
@@ -190,14 +197,14 @@
           <div class="row mx-0 px-5 main-2" style="border-top: 5px solid #2bb0e6;overflow-y: auto">
             <table class="table table-bordered emer-table my-1">
               <thead>
-                <tr class="table-dark">
+                <!-- <tr class="table-dark">
                   <th>يوجد إحتياج  </th>
                   <th>الصنف أو النوع  </th>
                   <th>الكمية الحالية  </th>
                   <th>الإستهلاك  </th>
                   <th>كمية الطلب  </th>
-                </tr>
-                <tr class="table-info">
+                </tr> -->
+                <tr style="background: #002060;color: white;">
                   <th>Item</th>
                   <th>Ordered QTY</th>
                   <th>Awarded QTY</th>
@@ -207,11 +214,11 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="table-warning"><b>Pharma</b></td>
-                  <td class="table-warning"></td>
-                  <td class="table-warning"></td>
-                  <td class="table-warning"></td>
-                  <td class="table-warning"></td>
+                  <td class="table-orange"><b>Pharma</b></td>
+                  <td class="table-orange"></td>
+                  <td class="table-orange"></td>
+                  <td class="table-orange"></td>
+                  <td class="table-orange"></td>
                 </tr>
                 <tr>
                   <td>Hydroxychloroquine</td>
@@ -354,11 +361,11 @@
                   <td>2m</td>
                 </tr>
                 <tr>
-                  <td class="table-warning"><b>Medical Supply</b></td>
-                  <td class="table-warning"></td>
-                  <td class="table-warning"></td>
-                  <td class="table-warning"></td>
-                  <td class="table-warning"></td>
+                  <td class="table-orange"><b>Medical Supply</b></td>
+                  <td class="table-orange"></td>
+                  <td class="table-orange"></td>
+                  <td class="table-orange"></td>
+                  <td class="table-orange"></td>
                 </tr>
                 <tr>
                   <td>Alcohol Hand Rub</td>
