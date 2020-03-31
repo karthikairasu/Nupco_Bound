@@ -17,10 +17,15 @@
     .emer-table th, .emer-table td {
       vertical-align: middle;
       border: 2px solid #cbd1d6;
-      text-align: center;
+      text-align: left;
       padding: 3px 4px;
     }
-  	
+  	.emer-table th{
+      text-align: center;
+    }
+    .emer-table td:nth-last-child(1){
+      text-align: center;
+    }
   </style>
 </head>
 <body class="bg-light">
@@ -34,6 +39,12 @@
       	  	<img src="assets/images/logo2.png" style="height: 70px;width: auto">
       	  </div>
       	  <div class="col-lg-4">
+            <div class="form-row my-1">
+              <label class="col-4"><b>Ministry</b></label>
+              <select class="form-control-sm col">
+                <option>Select Type</option>
+              </select>
+            </div>
             <div class="form-row my-1">
               <label class="col-4"><b>Entity Name</b></label>
               <select class="form-control-sm col">
@@ -54,6 +65,9 @@
             </div>
       	  </div>
       	  <div class="col-lg-4 text-center">
+            <div class="form-row my-1">
+              <label class="col-4"><b>الوزارة  </b></label>
+            </div>
       	  	<div class="form-row my-1">
               <label class="col-4"><b> اسم الجهة </b></label>
             </div>
@@ -68,7 +82,7 @@
             </div>
           </div>
       	  </div>
-          <div class="row mx-0 px-5" style="border-top: 5px solid #2bb0e6;">
+          <div class="row mx-0 px-5" style="border-top: 5px solid #2bb0e6;overflow-y: auto">
             <table class="table table-bordered emer-table my-1">
               <thead>
                 <tr class="table-dark">
@@ -79,27 +93,318 @@
                   <th>كمية الطلب  </th>
                 </tr>
                 <tr class="table-info">
-                  <th>Needed?</th>
                   <th>Item</th>
-                  <th>Qty</th>
+                  <th>Ordered QTY</th>
+                  <th>Awarded QTY</th>
                   <th>Consumption</th>
-                  <th>Demand</th>
+                  <th>Needed QTY</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><input type="checkbox" name=""></td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
+                  <td class="table-warning"><b>Medical Supply</b></td>
+                  <td class="table-warning"></td>
+                  <td class="table-warning"></td>
+                  <td class="table-warning"></td>
+                  <td class="table-warning"></td>
                 </tr>
+                <tr>
+                  <td>Hydroxychloroquine</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Azithromycin</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Remdesivir</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Favipiravir</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Vancomycin</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Linezolid</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Imipenem</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>meropenem</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Ceftazidime</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Tazocin</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Norepinephrine</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Midazolam</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Fentanyl</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Propofol</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Precedex</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>CISATRACURIUM</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>succinylcholine chloride</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>ENOXAPARIN</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>omeprazoleinsulin regular</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>hydrocortisone sodium</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td class="table-warning"><b>Medical Supply</b></td>
+                  <td class="table-warning"></td>
+                  <td class="table-warning"></td>
+                  <td class="table-warning"></td>
+                  <td class="table-warning"></td>
+                </tr>
+                <tr>
+                  <td>Alcohol Hand Rub</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Arterial cathetersCentral venus</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>catheters</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Urinary catheters</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Vent circuit</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Heated exchange moisture (H</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Bleach (Clorox)</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Hydrogen Peroxide Vap</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>ET Tubes (divided to differe sizes 7, 7.5, 8)</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Inline suction</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Open suction</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Hydrogen Peroxide Vapo</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>mist spray Concentrated quaternar ammonium compounds for floor clean</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Ambu bags with mask</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>High flow nasal cannula circuit and humidifier</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Noninvasive ventilations masks</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Distilled Water</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Noninvasive ventilations masks</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>Helmet</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                  <td>ECMO circuitECMO machines</td>
+                  <td>4m</td>
+                  <td>3k</td>
+                  <td>1m</td>
+                  <td><input type="checkbox" name="" id=""></td>
+                </tr>
+
               </tbody>
             </table>
           </div>
+
+          <div class="form-group text-center py-2 mb-0">
+            <button class="btn btn-info">Send Request</button>
+          </div>
       	</div>
       	
-      </div>
    </div>
 </div>
 
