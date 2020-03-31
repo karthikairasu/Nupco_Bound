@@ -100,45 +100,63 @@
     .option-input-1.radio::after {
       border-radius: 50%;
     }
+    @media only screen and (max-width: 767px) {
+     .main{
+      height: 100%!important;
+     }
+     .main-2{
+      padding: 5px 5px!important;
+     }
+    }
+    @media screen and (max-width: 560px) and (min-width: 300px) {
+     .main{
+       font-size: 13px!important;
+     }
+    }
   </style>
 </head>
 <body class="bg-light">
 
 <div class="container-fluid mt-1">
    <div class="row mx-0">
-      <div class="col-lg-12 card shadow" style="height: 99vh;border-right: 4px solid #b0292e;border-left: 4px solid #eb7b33;">
+      <div class="col-lg-12 card shadow main" style="height: 99vh;border-right: 4px solid #b0292e;border-left: 4px solid #eb7b33;">
       	<div class="row">
           <h4 class="text-center w-100 text-info"><b>Request Form</b></h4>
-      	  <div class="col-lg-4 text-center d-flex justify-content-center">
+      	  <div class="col-lg-4 col-sm-12 col-md-4 col-12 text-center d-flex justify-content-center">
       	  	<img src="assets/images/logo2.png" style="height: 100px;width: auto">
       	  </div>
-      	  <div class="col-lg-4">
+      	  <div class="col-lg-8 col-sm-12 col-md-8 col-12">
             <div class="form-row my-1">
-              <label class="col-4"><b>Ministry</b></label>
+              <label class="col-4 col-lg-2"><b>Ministry</b></label>
               <select class="form-control-sm col">
                 <option>Select Type</option>
               </select>
+              <label class="col"><b>لوزارة </b></label>
             </div>
             <div class="form-row my-1">
-              <label class="col-4"><b>Entity Name</b></label>
+              <label class="col-4 col-lg-2"><b>Entity Name</b></label>
               <select class="form-control-sm col">
                 <option>Select Type</option>
               </select>
+              <label class="col"><b>اسم الجهة  </b></label>
             </div>
             <div class="form-row my-1">
-              <label class="col-4"><b>Contact Person</b></label>
+              <label class="col-4 col-lg-2"><b>Contact Person</b></label>
               <input class="form-control-sm col" type="text" name="">
+              <label class="col"><b>اسم الشخص المسئول </b></label>
             </div>
             <div class="form-row my-1">
-              <label class="col-4"><b>Email</b></label>
+              <label class="col-4 col-lg-2"><b>Email</b></label>
               <input class="form-control-sm col" type="text" name="">
+              <label class="col"><b>لبريد الإلكتروني  </b></label>
             </div>
             <div class="form-row my-1">
-              <label class="col-4"><b>Phone</b></label>
+              <label class="col-4 col-lg-2"><b>Phone</b></label>
               <input class="form-control-sm col" type="text" name="">
+              <label class="col"><b>لقم التواصل </b></label>
             </div>
       	  </div>
-      	  <div class="col-lg-4 text-center">
+      	  <!-- <div class="col-lg-4 col-sm-6 col-md-6 col-5 text-center">
             <div class="form-row my-1">
               <label class="col-4"><b>الوزارة  </b></label>
             </div>
@@ -154,9 +172,9 @@
             <div class="form-row my-1">
               <label class="col-4"><b>رقم التواصل  </b></label>
             </div>
-          </div>
+          </div> -->
       	  </div>
-          <div class="row mx-0 px-5" style="border-top: 5px solid #2bb0e6;overflow-y: auto">
+          <div class="row mx-0 px-5 main-2" style="border-top: 5px solid #2bb0e6;overflow-y: auto">
             <table class="table table-bordered emer-table my-1">
               <thead>
                 <tr class="table-dark">
